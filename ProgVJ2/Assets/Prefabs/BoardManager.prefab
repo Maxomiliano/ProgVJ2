@@ -187,3 +187,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e5a6c14b16792c2478f7a9e50dd2b68c, type: 2}
   - {fileID: 11400000, guid: 021faff9de29e434098448245485e293, type: 2}
   - {fileID: 11400000, guid: 37dda81f041f45645858f7ec5e49746a, type: 2}
+  WallTiles:
+  - {fileID: 11400000, guid: d5dd286435eed78448fe86e1af82314f, type: 2}
