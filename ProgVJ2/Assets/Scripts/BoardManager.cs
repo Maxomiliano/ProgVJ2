@@ -16,14 +16,14 @@ public class BoardManager : MonoBehaviour
     public int Height;
     public Tile[] GroundTiles;
     public Tile[] WallTiles;
-    public PlayerController Player;
 
 
-    void Start()
+    public void Init()
     {
         _tileMap = GetComponentInChildren<Tilemap>();
-        _boardData = new CellData[Width, Height];
         _grid = GetComponentInChildren<Grid>();
+
+        _boardData = new CellData[Width, Height];
 
         for (int y = 0; y < Height; y++)
         {
@@ -46,8 +46,6 @@ public class BoardManager : MonoBehaviour
                 _tileMap.SetTile(new Vector3Int(x, y, 0), tile);
             }
         }
-
-        Player.Spawn(this, new Vector2Int(1, 1));
     }
 
     public Vector3 CellToWorld(Vector2Int cellIndex)
