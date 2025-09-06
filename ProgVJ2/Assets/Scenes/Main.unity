@@ -444,6 +444,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 2910584471588551829}
+    - target: {fileID: 2508555769631986944, guid: 5c5bb6bc472b67d42bb5a578001c1613, type: 3}
+      propertyPath: FoodPrefab.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3166991102405503684, guid: 5c5bb6bc472b67d42bb5a578001c1613, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
