@@ -10,9 +10,12 @@ public class GameManager : MonoBehaviour
     public TurnManager TurnManager;
     public UIDocument UIDoc;
 
-    private int _foodAmount = 100;
+    private int _foodAmount = 10;
     private Label _foodLabel;
     private int _currentLevel = 1;
+    private VisualElement _gameOverPanel;
+    private Label _gameOverMessage;
+
 
     private void Awake()
     {
@@ -29,10 +32,27 @@ public class GameManager : MonoBehaviour
         TurnManager = new TurnManager();
         TurnManager.OnTick += OnTurnHappen;        
 
-        NewLevel();
-
         _foodLabel = UIDoc.rootVisualElement.Q<Label>("FoodLabel");
-        _foodLabel.text = "Food " + _foodAmount;
+
+        _gameOverPanel = UIDoc.rootVisualElement.Q<VisualElement>("GameOverPanel");
+        _gameOverMessage = _gameOverPanel.Q<Label>("GameOverMessage");
+
+        StartNewGame();
+    }
+
+    public void StartNewGame()
+    {
+        _gameOverPanel.style.visibility = Visibility.Hidden;
+
+        _currentLevel = 1;
+        _foodAmount = 20;
+        _foodLabel.text = "Food : " + _foodAmount;
+
+        BoardManager.Clean();
+        BoardManager.Init();
+
+        PlayerController.Init();
+        PlayerController.Spawn(BoardManager, new Vector2Int(1, 1));
     }
 
     public void NewLevel()
@@ -52,5 +72,12 @@ public class GameManager : MonoBehaviour
     {
         _foodAmount += amount;
         _foodLabel.text = "Food : " + _foodAmount;
+
+        if (_foodAmount <= 0)
+        {
+            PlayerController.GameOver();
+            _gameOverPanel.style.visibility = Visibility.Visible;
+            _gameOverMessage.text = "Game Over!\n\nYou traveled through " + _currentLevel + " levels"; 
+        }
     }
 }
