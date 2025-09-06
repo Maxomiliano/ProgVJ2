@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
 
     private int _foodAmount = 100;
     private Label _foodLabel;
+    private int _currentLevel = 1;
 
     private void Awake()
     {
@@ -25,13 +26,21 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        TurnManager = new TurnManager();
+        TurnManager.OnTick += OnTurnHappen;        
+
+        NewLevel();
+
         _foodLabel = UIDoc.rootVisualElement.Q<Label>("FoodLabel");
         _foodLabel.text = "Food " + _foodAmount;
+    }
 
-        TurnManager = new TurnManager();
-        TurnManager.OnTick += OnTurnHappen;
+    public void NewLevel()
+    {
+        BoardManager.Clean();
         BoardManager.Init();
         PlayerController.Spawn(BoardManager, new Vector2Int(1, 1));
+        _currentLevel++;
     }
 
     void OnTurnHappen()
