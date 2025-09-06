@@ -17,6 +17,7 @@ public class BoardManager : MonoBehaviour
 
     public int Width;
     public int Height;
+    public WallObject[] wallPrefabArray;
     public Tile[] GroundTiles;
     public Tile[] WallTiles;
     public FoodObject[] FoodPrefabArray;
@@ -54,6 +55,8 @@ public class BoardManager : MonoBehaviour
             }
         }
         _emptyCellsList.Remove(new Vector2Int(1, 1));
+
+        GenerateWall();
         GenerateFood();
     }
 
@@ -85,6 +88,23 @@ public class BoardManager : MonoBehaviour
             newFood.transform.position = CellToWorld(coord);
             data.ContainedObject = newFood;
 
+        }
+    }
+
+    void GenerateWall()
+    {
+        int wallCount = Random.Range(6, 10);
+        for (int i = 0; i < wallCount; i++)
+        {
+            int randomIndex = Random.Range(0, _emptyCellsList.Count);
+            Vector2Int coord = _emptyCellsList[randomIndex];
+
+            _emptyCellsList.RemoveAt(randomIndex);
+            CellData data = _boardData[coord.x, coord.y];
+            WallObject newWall = Instantiate(wallPrefabArray[Random.Range(0, wallPrefabArray.Length)]);
+
+            newWall.transform.position = CellToWorld(coord);
+            data.ContainedObject = newWall;
         }
     }
 }
