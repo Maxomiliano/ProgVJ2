@@ -189,3 +189,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 37dda81f041f45645858f7ec5e49746a, type: 2}
   WallTiles:
   - {fileID: 11400000, guid: d5dd286435eed78448fe86e1af82314f, type: 2}
+  FoodPrefab: {fileID: 3622084634596519835, guid: 8fda1b00208cace4cbbbfc07f4bbe11a, type: 3}

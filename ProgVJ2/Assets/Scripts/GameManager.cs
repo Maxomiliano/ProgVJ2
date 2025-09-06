@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
@@ -7,8 +8,10 @@ public class GameManager : MonoBehaviour
     public BoardManager BoardManager;
     public PlayerController PlayerController;
     public TurnManager TurnManager;
+    public UIDocument UIDoc;
 
     private int _foodAmount = 100;
+    private Label _foodLabel;
 
     private void Awake()
     {
@@ -22,6 +25,9 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        _foodLabel = UIDoc.rootVisualElement.Q<Label>("FoodLabel");
+        _foodLabel.text = "Food " + _foodAmount;
+
         TurnManager = new TurnManager();
         TurnManager.OnTick += OnTurnHappen;
         BoardManager.Init();
@@ -31,6 +37,6 @@ public class GameManager : MonoBehaviour
     void OnTurnHappen()
     {
         _foodAmount -= 1;
-        Debug.Log("Current amount of food : " + _foodAmount);
+        _foodLabel.text = "Food " + _foodAmount;
     }
 }
