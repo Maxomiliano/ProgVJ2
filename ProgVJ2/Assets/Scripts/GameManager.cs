@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public TurnManager TurnManager;
     public UIDocument UIDoc;
 
-    private int _foodAmount = 10;
+    private int _foodAmount = 20;
     private Label _foodLabel;
     private int _currentLevel = 1;
     private VisualElement _gameOverPanel;
