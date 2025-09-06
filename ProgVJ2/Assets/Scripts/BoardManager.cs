@@ -115,4 +115,9 @@ public class BoardManager : MonoBehaviour
         data.ContainedObject = obj;
         obj.Init(coord);
     }
+
+    public Tile GetCellTile(Vector2Int cellIndex)
+    {
+        return _tileMap.GetTile<Tile>(new Vector3Int(cellIndex.x, cellIndex.y, 0));
+    }
 }
