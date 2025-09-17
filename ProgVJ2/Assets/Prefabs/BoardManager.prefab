@@ -187,6 +187,8 @@ MonoBehaviour:
   - {fileID: 7533906165021865110, guid: 9cddf8ebd9b40bc4e8bd081946b6b830, type: 3}
   - {fileID: 7533906165021865110, guid: 56d92aee1f9f2b944a1e2266b707a2f1, type: 3}
   - {fileID: 7533906165021865110, guid: a8be6471ac595564fb89b5a5157e720a, type: 3}
+  enemyPrefabArray:
+  - {fileID: 1239626992791020808, guid: c2924353d0ef34643b35d41e2802470a, type: 3}
   GroundTiles:
   - {fileID: 11400000, guid: e5a6c14b16792c2478f7a9e50dd2b68c, type: 2}
   - {fileID: 11400000, guid: 021faff9de29e434098448245485e293, type: 2}

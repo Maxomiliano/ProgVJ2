@@ -5,11 +5,6 @@ public class Enemy : CellObject
     public int Health = 3;
     private int _currentHealth;
 
-    private void Awake()
-    {
-        GameManager.Instance.TurnManager.OnTick += TurnHappened;
-    }
-
     private void OnDestroy()
     {
         GameManager.Instance.TurnManager.OnTick -= TurnHappened;
@@ -19,6 +14,9 @@ public class Enemy : CellObject
     {
         base.Init(coord);
         _currentHealth = Health;
+        transform.position = GameManager.Instance.BoardManager.CellToWorld(coord);
+
+        GameManager.Instance.TurnManager.OnTick += TurnHappened;
     }
 
     public override bool PlayerWantsToEnter()
