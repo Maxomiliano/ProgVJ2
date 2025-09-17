@@ -5,9 +5,20 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     private BoardManager _board;
+    private Animator _animator;
     private Vector2Int _cellPosition;
-    private bool _isGameOver;
+    private Vector3 _moveTarget;
 
+    private bool _isGameOver;
+    private bool hasMoved = false;
+
+    public float MoveSpeed = 5f;
+
+
+    private void Awake()
+    {
+        _animator = GetComponent<Animator>();
+    }
 
     public void Init()
     {
@@ -17,13 +28,25 @@ public class PlayerController : MonoBehaviour
     public void Spawn(BoardManager boardManager, Vector2Int cell)
     {
         _board = boardManager;
-        MoveTo(cell);
+        MoveTo(cell, true);
     }
 
-    public void MoveTo(Vector2Int cell)
+    public void MoveTo(Vector2Int cell, bool immediate)
     {
         _cellPosition = cell;
-        transform.position = _board.CellToWorld(_cellPosition);
+
+        if (immediate)
+        {
+            hasMoved = false;
+            transform.position = _board.CellToWorld(_cellPosition);
+        }
+        else
+        {
+            hasMoved = true;
+            _moveTarget = _board.CellToWorld(_cellPosition);
+        }
+
+        _animator.SetBool("Moving", hasMoved);
     }
 
     private void Update()
@@ -38,7 +61,7 @@ public class PlayerController : MonoBehaviour
         }
 
         Vector2Int newCellTarget = _cellPosition;
-        bool hasMoved = false;
+
 
         if (Keyboard.current.upArrowKey.wasPressedThisFrame)
         {
@@ -61,22 +84,36 @@ public class PlayerController : MonoBehaviour
             hasMoved = true;
         }
 
-        if (hasMoved)
+        if (newCellTarget != _cellPosition)
         {
             BoardManager.CellData cellData = _board.GetCellData(newCellTarget);
             if (cellData != null && cellData.Passable)
             {
                 GameManager.Instance.TurnManager.Tick();
-                if (cellData.ContainedObject == null)
+
+                if (cellData.ContainedObject == null || cellData.ContainedObject.PlayerWantsToEnter())
                 {
-                    MoveTo(newCellTarget);
+                    MoveTo(newCellTarget, false);
                 }
-                else if (cellData.ContainedObject.PlayerWantsToEnter())
+            }
+        }
+
+        if (hasMoved)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, _moveTarget, MoveSpeed * Time.deltaTime);
+
+            if (transform.position == _moveTarget)
+            {
+                hasMoved = false;
+                _animator.SetBool("Moving", false);
+
+                BoardManager.CellData cellData = _board.GetCellData(_cellPosition);
+                if (cellData.ContainedObject != null)
                 {
-                    MoveTo(newCellTarget);   
                     cellData.ContainedObject.PlayerEntered();
                 }
             }
+            return;
         }
     }
 
