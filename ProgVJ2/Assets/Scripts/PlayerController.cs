@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     private bool hasMoved = false;
 
     public float MoveSpeed = 5f;
+    public Vector2Int Cell => _cellPosition;
 
 
     private void Awake()
