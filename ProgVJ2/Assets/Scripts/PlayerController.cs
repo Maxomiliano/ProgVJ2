@@ -49,6 +49,11 @@ public class PlayerController : MonoBehaviour
         _animator.SetBool("Moving", hasMoved);
     }
 
+    private void Attack()
+    {
+        _animator.SetTrigger("Attack");
+    }
+
     private void Update()
     {
         if (_isGameOver)
@@ -91,9 +96,20 @@ public class PlayerController : MonoBehaviour
             {
                 GameManager.Instance.TurnManager.Tick();
 
-                if (cellData.ContainedObject == null || cellData.ContainedObject.PlayerWantsToEnter())
+                if (cellData.ContainedObject == null)
                 {
                     MoveTo(newCellTarget, false);
+                }
+                else
+                {
+                    if (cellData.ContainedObject.PlayerWantsToEnter())
+                    {
+                        MoveTo(newCellTarget, false);
+                    }
+                    else
+                    {
+                        Attack();
+                    }
                 }
             }
         }
