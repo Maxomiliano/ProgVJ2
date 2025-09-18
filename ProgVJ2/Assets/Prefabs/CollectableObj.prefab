@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6329121743812309910}
   - component: {fileID: 3746060596203145943}
+  - component: {fileID: 5742452202417705418}
   m_Layer: 0
   m_Name: CollectableObj
   m_TagString: Untagged
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 4802954496528926275, guid: 1814a2d0f580b1c4d844a5fb6f8dabb8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -87,3 +88,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5742452202417705418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588692602542134343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7495b294163bac24aa6a001cdc4b7884, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  experienceOnCollect: 2

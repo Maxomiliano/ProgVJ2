@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3075228621269051327}
   - component: {fileID: 3558774943226287792}
   - component: {fileID: 4915163889659669902}
+  - component: {fileID: 2098255334727604568}
+  - component: {fileID: 2663250266829354988}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -101,6 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec18669d36a98fc44badf5c5690375f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MoveSpeed: 5
 --- !u!95 &4915163889659669902
 Animator:
   serializedVersion: 7
@@ -123,3 +126,29 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2098255334727604568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909252795446690714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a38761aa265d38947900454cd3018d91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ProgressionData: {fileID: 11400000, guid: a40baa27bd6aced469738b7c80071640, type: 2}
+--- !u!114 &2663250266829354988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909252795446690714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dd680a3756ea8e4bb898f289e25b666, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Collectibles: []
