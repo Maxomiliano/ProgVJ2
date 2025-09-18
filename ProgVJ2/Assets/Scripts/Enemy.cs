@@ -4,10 +4,21 @@ public class Enemy : CellObject
 {
     public int Health = 3;
     private int _currentHealth;
+    public int experienceValue = 5;
 
     private void OnDestroy()
     {
         GameManager.Instance.TurnManager.OnTick -= TurnHappened;
+
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            PlayerProgression progression = player.GetComponent<PlayerProgression>();
+            if (progression != null)
+            {
+                progression.GainExperience(experienceValue);
+            }
+        }
     }
 
     public override void Init(Vector2Int coord)
