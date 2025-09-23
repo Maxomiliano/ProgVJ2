@@ -1,0 +1,1573 @@
+fileFormatVersion: 2
+guid: b30e239af23f2fe4fa2c1769f72a4680
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4361127616736447619
+    second: Rk7RZK-Photoroom_0
+  - first:
+      213: 5099566282777580240
+    second: Rk7RZK-Photoroom_1
+  - first:
+      213: -1665799485432367397
+    second: Rk7RZK-Photoroom_2
+  - first:
+      213: 5322434546386277262
+    second: Rk7RZK-Photoroom_3
+  - first:
+      213: -3904060672642034324
+    second: Rk7RZK-Photoroom_4
+  - first:
+      213: 2376450752389829477
+    second: Rk7RZK-Photoroom_5
+  - first:
+      213: 6465325831879041877
+    second: Rk7RZK-Photoroom_6
+  - first:
+      213: 4984543082216639880
+    second: Rk7RZK-Photoroom_7
+  - first:
+      213: -9212855388892295019
+    second: Rk7RZK-Photoroom_8
+  - first:
+      213: -7064070430287159291
+    second: Rk7RZK-Photoroom_9
+  - first:
+      213: 895562818669223113
+    second: Rk7RZK-Photoroom_10
+  - first:
+      213: -4865615520807656299
+    second: Rk7RZK-Photoroom_11
+  - first:
+      213: 568201501909532443
+    second: Rk7RZK-Photoroom_12
+  - first:
+      213: 5974652238789905122
+    second: Rk7RZK-Photoroom_13
+  - first:
+      213: -8475872234810722201
+    second: Rk7RZK-Photoroom_14
+  - first:
+      213: 7008249688925544085
+    second: Rk7RZK-Photoroom_15
+  - first:
+      213: 3710664049706271390
+    second: Rk7RZK-Photoroom_16
+  - first:
+      213: 3058929210940417031
+    second: Rk7RZK-Photoroom_17
+  - first:
+      213: 5053283022911056511
+    second: Rk7RZK-Photoroom_18
+  - first:
+      213: 7226015338677250642
+    second: Rk7RZK-Photoroom_19
+  - first:
+      213: 9158761227872242078
+    second: Rk7RZK-Photoroom_20
+  - first:
+      213: -3112298242512727057
+    second: Rk7RZK-Photoroom_21
+  - first:
+      213: 8902400088684068661
+    second: Rk7RZK-Photoroom_22
+  - first:
+      213: 2549746573131907406
+    second: Rk7RZK-Photoroom_23
+  - first:
+      213: -8457185500010385297
+    second: Rk7RZK-Photoroom_24
+  - first:
+      213: -7089603176284404468
+    second: Rk7RZK-Photoroom_25
+  - first:
+      213: -2364784709331740546
+    second: Rk7RZK-Photoroom_26
+  - first:
+      213: 984374257263561672
+    second: Rk7RZK-Photoroom_27
+  - first:
+      213: -5244516168698289478
+    second: Rk7RZK-Photoroom_28
+  - first:
+      213: -2449614717178950706
+    second: Rk7RZK-Photoroom_29
+  - first:
+      213: 2172620166258038302
+    second: Rk7RZK-Photoroom_30
+  - first:
+      213: -2455533866232552696
+    second: Rk7RZK-Photoroom_31
+  - first:
+      213: 6826876088711268355
+    second: Rk7RZK-Photoroom_32
+  - first:
+      213: -401601472865898299
+    second: Rk7RZK-Photoroom_33
+  - first:
+      213: -3464404735865569046
+    second: Rk7RZK-Photoroom_34
+  - first:
+      213: -4051763533752961043
+    second: Rk7RZK-Photoroom_35
+  - first:
+      213: 2024208246417770344
+    second: Rk7RZK-Photoroom_36
+  - first:
+      213: 5738603181463868457
+    second: Rk7RZK-Photoroom_37
+  - first:
+      213: -3830437346113839534
+    second: Rk7RZK-Photoroom_38
+  - first:
+      213: -8366657605474559796
+    second: Rk7RZK-Photoroom_39
+  - first:
+      213: -4552608258178957936
+    second: Rk7RZK-Photoroom_40
+  - first:
+      213: -471104219411201623
+    second: Rk7RZK-Photoroom_41
+  - first:
+      213: 708135952925709454
+    second: Rk7RZK-Photoroom_42
+  - first:
+      213: 8233994204086786349
+    second: Rk7RZK-Photoroom_43
+  - first:
+      213: -4493705169294895795
+    second: Rk7RZK-Photoroom_44
+  - first:
+      213: -844935679376380482
+    second: Rk7RZK-Photoroom_45
+  - first:
+      213: 1703804198806449647
+    second: Rk7RZK-Photoroom_46
+  - first:
+      213: 6970565835428313120
+    second: Rk7RZK-Photoroom_47
+  - first:
+      213: 2536098279737991241
+    second: Rk7RZK-Photoroom_48
+  - first:
+      213: -1389196386722156520
+    second: Rk7RZK-Photoroom_49
+  - first:
+      213: -9218314707384808923
+    second: Rk7RZK-Photoroom_50
+  - first:
+      213: -3949689381408755626
+    second: Rk7RZK-Photoroom_51
+  - first:
+      213: -4394891845822590038
+    second: Rk7RZK-Photoroom_52
+  - first:
+      213: -3145585088347277923
+    second: Rk7RZK-Photoroom_53
+  - first:
+      213: -713312782650968727
+    second: Rk7RZK-Photoroom_54
+  - first:
+      213: -8363055753520321237
+    second: Rk7RZK-Photoroom_55
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_0
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 682
+        width: 104
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38cc8bf0676d58c30800000000000000
+      internalID: 4361127616736447619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_1
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 682
+        width: 77
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d25489f38c45c640800000000000000
+      internalID: 5099566282777580240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_2
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 686
+        width: 97
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd676cb9134e1e8e0800000000000000
+      internalID: -1665799485432367397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_3
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 682
+        width: 105
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e831f9d35061dd940800000000000000
+      internalID: 5322434546386277262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_4
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 682
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c655999b08df1d9c0800000000000000
+      internalID: -3904060672642034324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_5
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 682
+        width: 94
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 563d76a4e59daf020800000000000000
+      internalID: 2376450752389829477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_6
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 682
+        width: 104
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 553ae4ed69379b950800000000000000
+      internalID: 6465325831879041877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_7
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 711
+        width: 112
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88d47272687ac2540800000000000000
+      internalID: 4984543082216639880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_8
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 704
+        width: 104
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 590180ae5dc552080800000000000000
+      internalID: -9212855388892295019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_9
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 693
+        width: 112
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 500a466ee5167fd90800000000000000
+      internalID: -7064070430287159291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_10
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 569
+        width: 112
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cc93d083adad6c00800000000000000
+      internalID: 895562818669223113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_11
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 562
+        width: 113
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 594e1a4867cd97cb0800000000000000
+      internalID: -4865615520807656299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_12
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 562
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1f392a6148a2e700800000000000000
+      internalID: 568201501909532443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_13
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 562
+        width: 105
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ea809d5e8a3ae250800000000000000
+      internalID: 5974652238789905122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_14
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 562
+        width: 75
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 768b28a0c17af5a80800000000000000
+      internalID: -8475872234810722201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_15
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 569
+        width: 97
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59e16a5f5fd424160800000000000000
+      internalID: 7008249688925544085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_16
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 562
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e920e831b4dee7330800000000000000
+      internalID: 3710664049706271390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_17
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 565
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7046b2319ef737a20800000000000000
+      internalID: 3058929210940417031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_18
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 565
+        width: 41
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7a202ac22ed02640800000000000000
+      internalID: 5053283022911056511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_19
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 562
+        width: 111
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25aa16b5aa6f74460800000000000000
+      internalID: 7226015338677250642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_20
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 565
+        width: 105
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9902f1cfc47a1f70800000000000000
+      internalID: 9158761227872242078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_21
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 441
+        width: 91
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe3d4f3fc35eec4d0800000000000000
+      internalID: -3112298242512727057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_22
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 448
+        width: 97
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53f7b66b6bdab8b70800000000000000
+      internalID: 8902400088684068661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_23
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 440
+        width: 105
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e410cc6cff4826320800000000000000
+      internalID: 2549746573131907406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_24
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 440
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f60fb48889a02aa80800000000000000
+      internalID: -8457185500010385297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_25
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 440
+        width: 93
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c054617397bac9d90800000000000000
+      internalID: -7089603176284404468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_26
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 440
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e78910606d89e2fd0800000000000000
+      internalID: -2364784709331740546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_27
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 444
+        width: 83
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cbcb3aeb2339ad00800000000000000
+      internalID: 984374257263561672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_28
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 441
+        width: 105
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab222f9c45cb737b0800000000000000
+      internalID: -5244516168698289478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_29
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 440
+        width: 111
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecbcaf1b468310ed0800000000000000
+      internalID: -2449614717178950706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_30
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 451
+        width: 91
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1619a9b782b62e10800000000000000
+      internalID: 2172620166258038302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_31
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 327
+        width: 104
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 803644965f03cedd0800000000000000
+      internalID: -2455533866232552696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_32
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 320
+        width: 113
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3084e31e1afedbe50800000000000000
+      internalID: 6826876088711268355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_33
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 320
+        width: 97
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c0fd8496993d6af0800000000000000
+      internalID: -401601472865898299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_34
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 320
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae04d887f36fbefc0800000000000000
+      internalID: -3464404735865569046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_35
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 323
+        width: 69
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de7f5c0888e35c7c0800000000000000
+      internalID: -4051763533752961043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_36
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 338
+        width: 112
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 867c527ecae671c10800000000000000
+      internalID: 2024208246417770344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_37
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 320
+        width: 54
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 924941a603d93af40800000000000000
+      internalID: 5738603181463868457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_38
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 323
+        width: 69
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25e9e7a378d87dac0800000000000000
+      internalID: -3830437346113839534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_39
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 323
+        width: 105
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc85e5c7c39a3eb80800000000000000
+      internalID: -8366657605474559796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_40
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 320
+        width: 98
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09dbbb1f8e2e1d0c0800000000000000
+      internalID: -4552608258178957936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_41
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 45
+        width: 110
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a1cecd553d4679f0800000000000000
+      internalID: -471104219411201623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_42
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 74
+        width: 55
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e84d1d6b5edc3d900800000000000000
+      internalID: 708135952925709454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_43
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 60
+        width: 111
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d29d7316a16054270800000000000000
+      internalID: 8233994204086786349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_44
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 105
+        width: 54
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4557da05f623a1c0800000000000000
+      internalID: -4493705169294895795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_45
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 45
+        width: 69
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebda7bce97f2644f0800000000000000
+      internalID: -844935679376380482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_46
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 51
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fed6da444e025a710800000000000000
+      internalID: 1703804198806449647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_47
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 51
+        width: 41
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 028bd2812bc6cb060800000000000000
+      internalID: 6970565835428313120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_48
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 74
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9402347d2f7023320800000000000000
+      internalID: 2536098279737991241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_49
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 54
+        width: 97
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8107b2e1f3598bce0800000000000000
+      internalID: -1389196386722156520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_50
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 74
+        width: 55
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52ac1964d97f11080800000000000000
+      internalID: -9218314707384808923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_51
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 50
+        width: 111
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 650bff71f62ef29c0800000000000000
+      internalID: -3949689381408755626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_52
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 105
+        width: 55
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa3db7fb6253203c0800000000000000
+      internalID: -4394891845822590038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_53
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 55
+        width: 105
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d957b463703a854d0800000000000000
+      internalID: -3145585088347277923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_54
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 77
+        width: 54
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 965f750bdcdc916f0800000000000000
+      internalID: -713312782650968727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rk7RZK-Photoroom_55
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 77
+        width: 55
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2d62aef91570fb80800000000000000
+      internalID: -8363055753520321237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Rk7RZK-Photoroom_0: 4361127616736447619
+      Rk7RZK-Photoroom_1: 5099566282777580240
+      Rk7RZK-Photoroom_10: 895562818669223113
+      Rk7RZK-Photoroom_11: -4865615520807656299
+      Rk7RZK-Photoroom_12: 568201501909532443
+      Rk7RZK-Photoroom_13: 5974652238789905122
+      Rk7RZK-Photoroom_14: -8475872234810722201
+      Rk7RZK-Photoroom_15: 7008249688925544085
+      Rk7RZK-Photoroom_16: 3710664049706271390
+      Rk7RZK-Photoroom_17: 3058929210940417031
+      Rk7RZK-Photoroom_18: 5053283022911056511
+      Rk7RZK-Photoroom_19: 7226015338677250642
+      Rk7RZK-Photoroom_2: -1665799485432367397
+      Rk7RZK-Photoroom_20: 9158761227872242078
+      Rk7RZK-Photoroom_21: -3112298242512727057
+      Rk7RZK-Photoroom_22: 8902400088684068661
+      Rk7RZK-Photoroom_23: 2549746573131907406
+      Rk7RZK-Photoroom_24: -8457185500010385297
+      Rk7RZK-Photoroom_25: -7089603176284404468
+      Rk7RZK-Photoroom_26: -2364784709331740546
+      Rk7RZK-Photoroom_27: 984374257263561672
+      Rk7RZK-Photoroom_28: -5244516168698289478
+      Rk7RZK-Photoroom_29: -2449614717178950706
+      Rk7RZK-Photoroom_3: 5322434546386277262
+      Rk7RZK-Photoroom_30: 2172620166258038302
+      Rk7RZK-Photoroom_31: -2455533866232552696
+      Rk7RZK-Photoroom_32: 6826876088711268355
+      Rk7RZK-Photoroom_33: -401601472865898299
+      Rk7RZK-Photoroom_34: -3464404735865569046
+      Rk7RZK-Photoroom_35: -4051763533752961043
+      Rk7RZK-Photoroom_36: 2024208246417770344
+      Rk7RZK-Photoroom_37: 5738603181463868457
+      Rk7RZK-Photoroom_38: -3830437346113839534
+      Rk7RZK-Photoroom_39: -8366657605474559796
+      Rk7RZK-Photoroom_4: -3904060672642034324
+      Rk7RZK-Photoroom_40: -4552608258178957936
+      Rk7RZK-Photoroom_41: -471104219411201623
+      Rk7RZK-Photoroom_42: 708135952925709454
+      Rk7RZK-Photoroom_43: 8233994204086786349
+      Rk7RZK-Photoroom_44: -4493705169294895795
+      Rk7RZK-Photoroom_45: -844935679376380482
+      Rk7RZK-Photoroom_46: 1703804198806449647
+      Rk7RZK-Photoroom_47: 6970565835428313120
+      Rk7RZK-Photoroom_48: 2536098279737991241
+      Rk7RZK-Photoroom_49: -1389196386722156520
+      Rk7RZK-Photoroom_5: 2376450752389829477
+      Rk7RZK-Photoroom_50: -9218314707384808923
+      Rk7RZK-Photoroom_51: -3949689381408755626
+      Rk7RZK-Photoroom_52: -4394891845822590038
+      Rk7RZK-Photoroom_53: -3145585088347277923
+      Rk7RZK-Photoroom_54: -713312782650968727
+      Rk7RZK-Photoroom_55: -8363055753520321237
+      Rk7RZK-Photoroom_6: 6465325831879041877
+      Rk7RZK-Photoroom_7: 4984543082216639880
+      Rk7RZK-Photoroom_8: -9212855388892295019
+      Rk7RZK-Photoroom_9: -7064070430287159291
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
