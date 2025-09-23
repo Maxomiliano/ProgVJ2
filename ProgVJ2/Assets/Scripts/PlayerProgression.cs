@@ -9,6 +9,8 @@ public class PlayerProgression : MonoBehaviour
     {
         ProgressionData.CurrentExperience += exp;
 
+        GameManager.Instance.UpdateExpUI(ProgressionData.CurrentExperience, ProgressionData.ExperienceToNextLevel);
+
         if (ProgressionData.CurrentExperience >= ProgressionData.ExperienceToNextLevel)
         {
             LevelUp();
@@ -22,5 +24,8 @@ public class PlayerProgression : MonoBehaviour
         ProgressionData.ExperienceToNextLevel += 10;
 
         Debug.Log("Current level: " + ProgressionData.CurrentLevel);
+
+        GameManager.Instance.UpdateLevelUI(ProgressionData.CurrentLevel);
+        GameManager.Instance.UpdateExpUI(ProgressionData.CurrentExperience, ProgressionData.ExperienceToNextLevel);
     }
 }

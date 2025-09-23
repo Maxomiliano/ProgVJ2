@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -15,6 +16,8 @@ public class GameManager : MonoBehaviour
     private int _currentLevel = 1;
     private VisualElement _gameOverPanel;
     private Label _gameOverMessage;
+    private Label _levelLabel;
+    private ProgressBar _progressBar;
 
 
     private void Awake()
@@ -37,6 +40,9 @@ public class GameManager : MonoBehaviour
         _gameOverPanel = UIDoc.rootVisualElement.Q<VisualElement>("GameOverPanel");
         _gameOverMessage = _gameOverPanel.Q<Label>("GameOverMessage");
 
+        _levelLabel = UIDoc.rootVisualElement.Q<Label>("LvlLabel");
+        _progressBar = UIDoc.rootVisualElement.Q<ProgressBar>("ProgressBar");
+
         StartNewGame();
     }
 
@@ -47,6 +53,9 @@ public class GameManager : MonoBehaviour
         _currentLevel = 1;
         _foodAmount = 20;
         _foodLabel.text = "Food : " + _foodAmount;
+
+        UpdateLevelUI(1);
+        UpdateExpUI(0, 100);
 
         BoardManager.Clean();
         BoardManager.Init();
@@ -79,5 +88,16 @@ public class GameManager : MonoBehaviour
             _gameOverPanel.style.visibility = Visibility.Visible;
             _gameOverMessage.text = "Game Over!\n\nYou traveled through " + _currentLevel + " levels"; 
         }
+    }
+
+    public void UpdateLevelUI(int level)
+    {
+        _levelLabel.text = $"Lvl {level}";
+    }
+
+    public void UpdateExpUI(int currentExp, int requiredExp)
+    {
+        _progressBar.highValue = requiredExp;
+        _progressBar.value = currentExp;
     }
 }
