@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     private VisualElement _gameOverPanel;
     private Label _gameOverMessage;
     private Label _levelLabel;
+    private Label _stageLabel;
     private ProgressBar _progressBar;
 
 
@@ -43,6 +44,8 @@ public class GameManager : MonoBehaviour
         _levelLabel = UIDoc.rootVisualElement.Q<Label>("LvlLabel");
         _progressBar = UIDoc.rootVisualElement.Q<ProgressBar>("ProgressBar");
 
+        _stageLabel = UIDoc.rootVisualElement.Q<Label>("StageLabel");
+
         StartNewGame();
     }
 
@@ -56,6 +59,7 @@ public class GameManager : MonoBehaviour
 
         UpdateLevelUI(1);
         UpdateExpUI(0, 100);
+        UpdateStageUI(_currentLevel);
 
         BoardManager.Clean();
         BoardManager.Init();
@@ -70,6 +74,8 @@ public class GameManager : MonoBehaviour
         BoardManager.Init();
         PlayerController.Spawn(BoardManager, new Vector2Int(1, 1));
         _currentLevel++;
+
+        UpdateStageUI(_currentLevel);
     }
 
     void OnTurnHappen()
@@ -99,5 +105,13 @@ public class GameManager : MonoBehaviour
     {
         _progressBar.highValue = requiredExp;
         _progressBar.value = currentExp;
+    }
+
+    public void UpdateStageUI(int stage)
+    {
+        if (_stageLabel != null)
+        {
+            _stageLabel.text = $"Stage {stage}";
+        }
     }
 }
