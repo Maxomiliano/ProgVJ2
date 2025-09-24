@@ -76,7 +76,7 @@ public class Enemy : CellObject
 
         if ((xDist == 0 && absYDist == 1) || (yDist == 0 && absXDist == 1))
         {
-            GameManager.Instance.ChangeFood(3);
+            GameManager.Instance.ChangeFood(-1);
         }
         else
         {
