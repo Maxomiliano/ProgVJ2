@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
         {
             hasMoved = false;
             transform.position = _board.CellToWorld(_cellPosition);
+            _moveTarget = transform.position;
         }
         else
         {
@@ -67,30 +68,31 @@ public class PlayerController : MonoBehaviour
         }
 
         Vector2Int newCellTarget = _cellPosition;
+        bool inputDetected = false;
 
 
         if (Keyboard.current.upArrowKey.wasPressedThisFrame)
         {
             newCellTarget.y += 1;
-            hasMoved = true;
+            inputDetected = true;
         }
         else if (Keyboard.current.downArrowKey.wasPressedThisFrame)
         {
             newCellTarget.y -= 1;
-            hasMoved = true;
+            inputDetected = true;
         }
         else if (Keyboard.current.rightArrowKey.wasPressedThisFrame)
         {
             newCellTarget.x += 1;
-            hasMoved = true;
+            inputDetected = true;
         }
         else if (Keyboard.current.leftArrowKey.wasPressedThisFrame)
         {
             newCellTarget.x -= 1;
-            hasMoved = true;
+            inputDetected = true;
         }
 
-        if (newCellTarget != _cellPosition)
+        if (inputDetected && newCellTarget != _cellPosition)
         {
             BoardManager.CellData cellData = _board.GetCellData(newCellTarget);
             if (cellData != null && cellData.Passable)
@@ -119,7 +121,7 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = Vector3.MoveTowards(transform.position, _moveTarget, MoveSpeed * Time.deltaTime);
 
-            if (transform.position == _moveTarget)
+            if (Vector3.Distance(transform.position, _moveTarget) < 0.001f)
             {
                 hasMoved = false;
                 _animator.SetBool("Moving", false);
