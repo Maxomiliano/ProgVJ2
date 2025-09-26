@@ -6,19 +6,23 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
+    private ObjectCollector objectCollector = new ObjectCollector();
     public BoardManager BoardManager;
     public PlayerController PlayerController;
     public TurnManager TurnManager;
     public UIDocument UIDoc;
 
+    public int CollectedCount = 0;
     private int _foodAmount = 20;
-    private Label _foodLabel;
     private int _currentLevel = 1;
+
     private VisualElement _gameOverPanel;
+    private ProgressBar _progressBar;
+    private Label _foodLabel;
     private Label _gameOverMessage;
     private Label _levelLabel;
     private Label _stageLabel;
-    private ProgressBar _progressBar;
+    private Label _collectableLabel;
 
 
     private void Awake()
@@ -33,6 +37,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        ObjectCollector objectCollector = FindFirstObjectByType<ObjectCollector>();
+
         TurnManager = new TurnManager();
         TurnManager.OnTick += OnTurnHappen;        
 
@@ -45,6 +51,8 @@ public class GameManager : MonoBehaviour
         _progressBar = UIDoc.rootVisualElement.Q<ProgressBar>("ProgressBar");
 
         _stageLabel = UIDoc.rootVisualElement.Q<Label>("StageLabel");
+
+        _collectableLabel = UIDoc.rootVisualElement.Q<Label>("CollectableLabel");
 
         StartNewGame();
     }
@@ -60,6 +68,7 @@ public class GameManager : MonoBehaviour
         UpdateLevelUI(1);
         UpdateExpUI(0, 100);
         UpdateStageUI(_currentLevel);
+        UpdateCollectableUI(CollectedCount);
 
         BoardManager.Clean();
         BoardManager.Init();
@@ -76,6 +85,7 @@ public class GameManager : MonoBehaviour
         _currentLevel++;
 
         UpdateStageUI(_currentLevel);
+        UpdateCollectableUI(CollectedCount);
     }
 
     void OnTurnHappen()
@@ -112,6 +122,14 @@ public class GameManager : MonoBehaviour
         if (_stageLabel != null)
         {
             _stageLabel.text = $"Stage {stage}";
+        }
+    }
+
+    public void UpdateCollectableUI(int coll)
+    {
+        if (_collectableLabel != null)
+        {
+            _collectableLabel.text = $"Rescued: {CollectedCount}";
         }
     }
 }
