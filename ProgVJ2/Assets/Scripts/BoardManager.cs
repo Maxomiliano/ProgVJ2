@@ -36,6 +36,14 @@ public class BoardManager : MonoBehaviour
     private List<EnemyBiteCellObject> _enemyBiteCell = new List<EnemyBiteCellObject>();
     private Coroutine _biteCoroutine;
 
+
+    public ObjectPooler ObjectPooler;
+    public float ProjectileSpeed = 5f;
+    public int ProjectileDamage = 1;
+    public float ProjectileDuration = 4f;
+    public float ProjectileInitialDelay = 2f;
+    public float ProjectileInterval = 3f;
+
     public void Init()
     {
         _tileMap = GetComponentInChildren<Tilemap>();
@@ -81,6 +89,8 @@ public class BoardManager : MonoBehaviour
         {
             GenerateEnemyBiteSpawner();
         }
+
+        if (ObjectPooler != null) StartProjectileShooting();
     }
 
     public Vector3 CellToWorld(Vector2Int cellIndex)
@@ -215,6 +225,63 @@ public class BoardManager : MonoBehaviour
         return validCells;
     }
 
+
+    public void StartProjectileShooting()
+    {
+        if (ObjectPooler == null || ObjectPooler.PooledPrefab == null) return;
+        CancelInvoke(nameof(ShootFromBorder));
+        InvokeRepeating(nameof(ShootFromBorder), ProjectileInitialDelay, ProjectileInterval);
+    }
+
+    public void StopProjectileShooting()
+    {
+        CancelInvoke(nameof(ShootFromBorder));
+    }
+
+    private void ShootFromBorder()
+    {
+        if (ObjectPooler == null) return;
+
+        GameObject go = ObjectPooler.GetPooledObject();
+        if (go == null) return;
+
+        int borderSide = Random.Range(0, 4);
+        Vector2Int borderCell;
+        Vector3 direction;
+
+        switch (borderSide)
+        {
+            case 0:
+                borderCell = new Vector2Int(0, Random.Range(1, Height - 1));
+                direction = Vector3.right;
+                break;
+            case 1:
+                borderCell = new Vector2Int(Width - 1, Random.Range(1, Height - 1));
+                direction = Vector3.left;
+                break;
+            case 2:
+                borderCell = new Vector2Int(Random.Range(1, Width - 1), 0);
+                direction = Vector3.up;
+                break;
+            default:
+                borderCell = new Vector2Int(Random.Range(1, Width - 1), Height - 1);
+                direction = Vector3.down;
+                break;
+        }
+
+        Vector3 worldPos = CellToWorld(borderCell);
+        go.transform.position = worldPos;
+        go.transform.SetParent(null);
+        go.SetActive(true);
+
+        WallProjectile projectile = go.GetComponent<WallProjectile>();
+        if (projectile != null)
+        {
+            projectile.Init(direction, ProjectileSpeed, ProjectileDamage, ProjectileDuration, ObjectPooler);
+        }
+        //else
+    }
+
     public void SetCellTile(Vector2Int cellIndex, Tile tile)
     {
         _tileMap.SetTile(new Vector3Int(cellIndex.x, cellIndex.y, 0), tile);
@@ -235,6 +302,7 @@ public class BoardManager : MonoBehaviour
 
     public void Clean()
     {
+        StopProjectileShooting();
         if (_boardData == null) return;
 
         for (int y = 0; y < Height; y++)
