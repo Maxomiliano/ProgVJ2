@@ -181,21 +181,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d660f867178d644c99ce171e19716da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Width: 8
-  Height: 8
-  wallPrefabArray:
-  - {fileID: 7533906165021865110, guid: 9cddf8ebd9b40bc4e8bd081946b6b830, type: 3}
-  - {fileID: 7533906165021865110, guid: 56d92aee1f9f2b944a1e2266b707a2f1, type: 3}
-  - {fileID: 7533906165021865110, guid: a8be6471ac595564fb89b5a5157e720a, type: 3}
-  enemyPrefabArray:
-  - {fileID: 1239626992791020808, guid: c2924353d0ef34643b35d41e2802470a, type: 3}
+  Width: 9
+  Height: 9
   GroundTiles:
   - {fileID: 11400000, guid: e5a6c14b16792c2478f7a9e50dd2b68c, type: 2}
   - {fileID: 11400000, guid: 021faff9de29e434098448245485e293, type: 2}
   - {fileID: 11400000, guid: 37dda81f041f45645858f7ec5e49746a, type: 2}
   WallTiles:
   - {fileID: 11400000, guid: d5dd286435eed78448fe86e1af82314f, type: 2}
+  wallPrefabArray:
+  - {fileID: 7533906165021865110, guid: 9cddf8ebd9b40bc4e8bd081946b6b830, type: 3}
+  - {fileID: 7533906165021865110, guid: 56d92aee1f9f2b944a1e2266b707a2f1, type: 3}
+  - {fileID: 7533906165021865110, guid: a8be6471ac595564fb89b5a5157e720a, type: 3}
+  enemyPrefabArray:
+  - {fileID: 1239626992791020808, guid: c2924353d0ef34643b35d41e2802470a, type: 3}
   FoodPrefabArray:
   - {fileID: 878500553085852409, guid: 8fda1b00208cace4cbbbfc07f4bbe11a, type: 3}
   - {fileID: 4413201447461796163, guid: 2d18fc06bc0db6b4484fe73944229e91, type: 3}
+  CollectableCellObjectPrefabArray:
+  - {fileID: 5742452202417705418, guid: 1f5500c250c498a45b7f3a2726e51a52, type: 3}
   ExitCellPrefab: {fileID: 8774076316886455269, guid: a9291b430186171479ab19a16d11801f, type: 3}

@@ -465,14 +465,6 @@ PrefabInstance:
       propertyPath: FoodPrefab.Array.size
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 2508555769631986944, guid: 5c5bb6bc472b67d42bb5a578001c1613, type: 3}
-      propertyPath: CollectableCellObjectPrefabArray.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2508555769631986944, guid: 5c5bb6bc472b67d42bb5a578001c1613, type: 3}
-      propertyPath: 'CollectableCellObjectPrefabArray.Array.data[0]'
-      value: 
-      objectReference: {fileID: 5742452202417705418, guid: 1f5500c250c498a45b7f3a2726e51a52, type: 3}
     - target: {fileID: 3166991102405503684, guid: 5c5bb6bc472b67d42bb5a578001c1613, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
