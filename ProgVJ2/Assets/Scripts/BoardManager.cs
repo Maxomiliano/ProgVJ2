@@ -169,12 +169,16 @@ public class BoardManager : MonoBehaviour
             yield return new WaitForSeconds(EnemyBiteSpawnInterval);
 
             List<Vector2Int> validCells = GetValidEmptyCells();
+
             if (validCells.Count == 0) continue;
 
-            _enemyBiteCell.RemoveAll(b => b == null);
+            int spawnsToDo = Mathf.Min(EnemyBiteMaxSpawns, validCells.Count);
 
-            if (_enemyBiteCell.Count < EnemyBiteMaxSpawns)
+            for (int i = 0; i < spawnsToDo; i++)
             {
+                int randomIndex = Random.Range(0, validCells.Count);
+                Vector2Int pos = validCells[randomIndex];
+                validCells.RemoveAt(randomIndex);
                 SpawnEnemyBite();
             }
         }
@@ -188,12 +192,9 @@ public class BoardManager : MonoBehaviour
 
         Vector2Int spawnCell = emptyCells[Random.Range(0, emptyCells.Count)];
 
-        for (int i = 0; i < EnemyBiteMaxSpawns; i++)
-        {
-            EnemyBiteCellObject newBite = Instantiate(EnemyBitePrefab);
-            AddObject(newBite, spawnCell);
-            _enemyBiteCell.Add(newBite);
-        }
+        EnemyBiteCellObject newBite = Instantiate(EnemyBitePrefab);
+        AddObject(newBite, spawnCell);
+        _enemyBiteCell.Add(newBite);
     }
 
     private List<Vector2Int> GetValidEmptyCells()
