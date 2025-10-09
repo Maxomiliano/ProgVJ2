@@ -138,7 +138,6 @@ public class BoardManager : MonoBehaviour
             Enemy newEnemy = Instantiate(enemyPrefabArray[Random.Range(0, enemyPrefabArray.Length)]);
             AddObject(newEnemy, coord);
         }
-
     }
 
     void GenerateCollectable()
@@ -173,6 +172,7 @@ public class BoardManager : MonoBehaviour
             if (validCells.Count == 0) continue;
 
             int spawnsToDo = Mathf.Min(EnemyBiteMaxSpawns, validCells.Count);
+
 
             for (int i = 0; i < spawnsToDo; i++)
             {
