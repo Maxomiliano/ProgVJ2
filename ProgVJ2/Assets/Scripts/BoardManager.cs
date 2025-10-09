@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using System.Collections.Generic;
+using JetBrains.Annotations;
+using System.Collections;
 
 public class BoardManager : MonoBehaviour
 {
@@ -23,10 +25,16 @@ public class BoardManager : MonoBehaviour
     public WallObject[] wallPrefabArray;
     public Enemy[] enemyPrefabArray;
     public FoodObject[] FoodPrefabArray;
-    public CollectableCellObject[] CollectableCellObjectPrefabArray; 
+    public CollectableCellObject[] CollectableCellObjectPrefabArray;
 
     public ExitCellObject ExitCellPrefab;
 
+    public EnemyBiteCellObject EnemyBitePrefab;
+    public int EnemyBiteMaxSpawns = 3;
+    public float EnemyBiteSpawnInterval = 3f;
+
+    private List<EnemyBiteCellObject> _enemyBiteCell = new List<EnemyBiteCellObject>();
+    private Coroutine _biteCoroutine;
 
     public void Init()
     {
@@ -68,6 +76,11 @@ public class BoardManager : MonoBehaviour
         GenerateFood();
         GenerateEnemy();
         GenerateCollectable();
+
+        if (EnemyBitePrefab != null && EnemyBiteMaxSpawns > 0)
+        {
+            GenerateEnemyBiteSpawner();
+        }
     }
 
     public Vector3 CellToWorld(Vector2Int cellIndex)
@@ -93,7 +106,7 @@ public class BoardManager : MonoBehaviour
             Vector2Int coord = _emptyCellsList[randomIndex];
 
             _emptyCellsList.RemoveAt(randomIndex);
-            FoodObject newFood = Instantiate(FoodPrefabArray[Random.Range(0,FoodPrefabArray.Length)]);
+            FoodObject newFood = Instantiate(FoodPrefabArray[Random.Range(0, FoodPrefabArray.Length)]);
             AddObject(newFood, coord);
 
         }
@@ -140,6 +153,65 @@ public class BoardManager : MonoBehaviour
             CollectableCellObject newCollectableObj = Instantiate(CollectableCellObjectPrefabArray[Random.Range(0, CollectableCellObjectPrefabArray.Length)]);
             AddObject(newCollectableObj, coord);
         }
+    }
+
+    public void GenerateEnemyBiteSpawner()
+    {
+        if (_biteCoroutine != null) return;
+        _biteCoroutine = StartCoroutine(EnemyBiteSpawnCoroutine());
+    }
+
+
+    private IEnumerator EnemyBiteSpawnCoroutine()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(EnemyBiteSpawnInterval);
+
+            List<Vector2Int> validCells = GetValidEmptyCells();
+            if (validCells.Count == 0) continue;
+
+            _enemyBiteCell.RemoveAll(b => b == null);
+
+            if (_enemyBiteCell.Count < EnemyBiteMaxSpawns)
+            {
+                SpawnEnemyBite();
+            }
+        }
+    }
+
+    private void SpawnEnemyBite()
+    {
+        List<Vector2Int> emptyCells = GetValidEmptyCells();
+
+        if (emptyCells.Count == 0) return;
+
+        Vector2Int spawnCell = emptyCells[Random.Range(0, emptyCells.Count)];
+
+        for (int i = 0; i < EnemyBiteMaxSpawns; i++)
+        {
+            EnemyBiteCellObject newBite = Instantiate(EnemyBitePrefab);
+            AddObject(newBite, spawnCell);
+            _enemyBiteCell.Add(newBite);
+        }
+    }
+
+    private List<Vector2Int> GetValidEmptyCells()
+    {
+        List<Vector2Int> validCells = new List<Vector2Int>();
+
+        for (int y = 1; y < Height - 1; y++)
+        {
+            for (int x = 1; x < Width - 1; x++)
+            {
+                var cellData = GetCellData(new Vector2Int(x, y));
+                if (cellData != null && cellData.Passable && cellData.ContainedObject == null)
+                {
+                    validCells.Add(new Vector2Int(x, y));
+                }
+            }
+        }
+        return validCells;
     }
 
     public void SetCellTile(Vector2Int cellIndex, Tile tile)

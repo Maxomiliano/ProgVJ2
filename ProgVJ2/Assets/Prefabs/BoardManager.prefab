@@ -201,3 +201,7 @@ MonoBehaviour:
   CollectableCellObjectPrefabArray:
   - {fileID: 5742452202417705418, guid: 1f5500c250c498a45b7f3a2726e51a52, type: 3}
   ExitCellPrefab: {fileID: 8774076316886455269, guid: a9291b430186171479ab19a16d11801f, type: 3}
+  EnemyBitePrefab: {fileID: 3340482906166842745, guid: b935585c04fb1144280c51cfcecc23a0, type: 3}
+  EnemyBiteMaxSpawns: 3
+  EnemyBiteSpawnInterval: 3
+  EnemyBiteLifetime: 3
