@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System;
 
 public class ObjectPooler : MonoBehaviour
 {
@@ -26,5 +27,11 @@ public class ObjectPooler : MonoBehaviour
             if(!go.activeInHierarchy) return go;
         }
         return null;
+    }
+
+    public void ReturnPooledObject(GameObject go)
+    {
+        go.SetActive(false);
+        go.transform.SetParent(transform);
     }
 }
