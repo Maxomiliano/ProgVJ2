@@ -38,9 +38,6 @@ public class BoardManager : MonoBehaviour
 
 
     public ObjectPooler ObjectPooler;
-    public float ProjectileSpeed = 5f;
-    public int ProjectileDamage = 1;
-    public float ProjectileDuration = 4f;
     public float ProjectileInitialDelay = 2f;
     public float ProjectileInterval = 3f;
 
@@ -276,7 +273,7 @@ public class BoardManager : MonoBehaviour
         WallProjectile projectile = go.GetComponent<WallProjectile>();
         if (projectile != null)
         {
-            projectile.Init(direction, ProjectileSpeed, ProjectileDamage, ProjectileDuration, ObjectPooler);
+            projectile.Init(direction, projectile.Speed, projectile.Damage, projectile.Lifetime, ObjectPooler);
         }
     }
 
