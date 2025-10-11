@@ -11,10 +11,12 @@ public class GameManager : MonoBehaviour
     public PlayerController PlayerController;
     public TurnManager TurnManager;
     public UIDocument UIDoc;
+    public bool IsGameOver;
 
     public int CollectedCount = 0;
     private int _foodAmount = 20;
     private int _currentLevel = 1;
+    private int _playerLives = 3;
 
     private VisualElement _gameOverPanel;
     private ProgressBar _progressBar;
@@ -23,6 +25,7 @@ public class GameManager : MonoBehaviour
     private Label _levelLabel;
     private Label _stageLabel;
     private Label _collectableLabel;
+    private Label _livesLabel;
 
 
     private void Awake()
@@ -37,8 +40,9 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        ObjectCollector objectCollector = FindFirstObjectByType<ObjectCollector>();
+        IsGameOver = false;
 
+        ObjectCollector objectCollector = FindFirstObjectByType<ObjectCollector>();
         TurnManager = new TurnManager();
         TurnManager.OnTick += OnTurnHappen;        
 
@@ -53,6 +57,7 @@ public class GameManager : MonoBehaviour
         _stageLabel = UIDoc.rootVisualElement.Q<Label>("StageLabel");
 
         _collectableLabel = UIDoc.rootVisualElement.Q<Label>("CollectableLabel");
+        _livesLabel = UIDoc.rootVisualElement.Q<Label>("LivesLabel");
 
         StartNewGame();
     }
@@ -63,17 +68,19 @@ public class GameManager : MonoBehaviour
 
         _currentLevel = 1;
         _foodAmount = 20;
-        _foodLabel.text = "Food : " + _foodAmount;
+        _foodLabel.text = "Food: " + _foodAmount;
+        _playerLives = 3;
 
         UpdateLevelUI(1);
         UpdateExpUI(0, 100);
         UpdateStageUI(_currentLevel);
         UpdateCollectableUI(CollectedCount);
+        UpdateLivesUI();
 
         BoardManager.Clean();
         BoardManager.Init();
 
-        PlayerController.Init();
+        //PlayerController.Init();
         PlayerController.Spawn(BoardManager, new Vector2Int(1, 1));
     }
 
@@ -100,9 +107,26 @@ public class GameManager : MonoBehaviour
 
         if (_foodAmount <= 0)
         {
-            PlayerController.GameOver();
-            _gameOverPanel.style.visibility = Visibility.Visible;
-            _gameOverMessage.text = "Game Over!\n\nYou traveled through " + _currentLevel + " levels"; 
+            GameOver();
+        }
+    }
+
+    public void ChangeLives(int amount)
+    {
+        _playerLives += amount;
+        UpdateLivesUI();
+
+        if (_playerLives <= 0)
+        {
+            GameOver();
+        }
+    }
+
+    public void UpdateLivesUI()
+    {
+        if (_livesLabel != null)
+        {
+            _livesLabel.text = $"Lives: {_playerLives}";
         }
     }
 
@@ -131,5 +155,12 @@ public class GameManager : MonoBehaviour
         {
             _collectableLabel.text = $"Rescued: {CollectedCount}";
         }
+    }
+
+    public void GameOver()
+    {
+        IsGameOver = true;
+        _gameOverPanel.style.visibility = Visibility.Visible;
+        _gameOverMessage.text = "Game Over!\n\nYou traveled through " + _currentLevel + " levels";
     }
 }

@@ -1,4 +1,5 @@
 using System;
+using System.Reflection.Emit;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,7 +10,6 @@ public class PlayerController : MonoBehaviour
     private Vector2Int _cellPosition;
     private Vector3 _moveTarget;
 
-    private bool _isGameOver;
     private bool hasMoved = false;
 
     public float MoveSpeed = 5f;
@@ -21,10 +21,12 @@ public class PlayerController : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
+    /*
     public void Init()
     {
-        _isGameOver = false;
+        
     }
+    */
 
     public void Spawn(BoardManager boardManager, Vector2Int cell)
     {
@@ -58,7 +60,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (_isGameOver)
+        if (GameManager.Instance.IsGameOver)
         {
             if (Keyboard.current.enterKey.wasPressedThisFrame)
             {
@@ -134,10 +136,5 @@ public class PlayerController : MonoBehaviour
             }
             return;
         }
-    }
-
-    public void GameOver()
-    {
-        _isGameOver = true;
     }
 }

@@ -40,6 +40,7 @@ public class BoardManager : MonoBehaviour
     public ObjectPooler ObjectPooler;
     public float ProjectileInitialDelay = 2f;
     public float ProjectileInterval = 3f;
+    public int ProjectilePerShot = 1;
 
     public void Init()
     {

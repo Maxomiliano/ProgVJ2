@@ -31,7 +31,7 @@ public class WallProjectile : MonoBehaviour
             float distance = Vector3.Distance(transform.position, player.transform.position);
             if (distance < 0.5f)
             {
-                GameManager.Instance.ChangeFood(-Damage); //Eventualmente esto va a ser un hitpoint que debo agregarle al personaje.
+                GameManager.Instance.ChangeLives(-Damage); //Eventualmente esto va a ser un hitpoint que debo agregarle al personaje.
                 ReturnToPool();
                 return;
             }
