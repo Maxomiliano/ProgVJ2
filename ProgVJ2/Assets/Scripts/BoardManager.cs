@@ -271,7 +271,6 @@ public class BoardManager : MonoBehaviour
 
         Vector3 worldPos = CellToWorld(borderCell);
         go.transform.position = worldPos;
-        go.transform.SetParent(null);
         go.SetActive(true);
 
         WallProjectile projectile = go.GetComponent<WallProjectile>();
@@ -279,7 +278,6 @@ public class BoardManager : MonoBehaviour
         {
             projectile.Init(direction, ProjectileSpeed, ProjectileDamage, ProjectileDuration, ObjectPooler);
         }
-        //else
     }
 
     public void SetCellTile(Vector2Int cellIndex, Tile tile)

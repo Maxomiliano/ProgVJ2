@@ -534,6 +534,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 909745147}
     - target: {fileID: 2508555769631986944, guid: 5c5bb6bc472b67d42bb5a578001c1613, type: 3}
+      propertyPath: ProjectileDuration
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508555769631986944, guid: 5c5bb6bc472b67d42bb5a578001c1613, type: 3}
       propertyPath: FoodPrefab.Array.size
       value: 2
       objectReference: {fileID: 0}
