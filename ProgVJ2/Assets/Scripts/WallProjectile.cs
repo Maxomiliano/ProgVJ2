@@ -3,6 +3,7 @@ using UnityEngine;
 public class WallProjectile : MonoBehaviour
 {
     [SerializeField] private AudioClip _rockSFX;
+    [SerializeField] private ParticleSystem _stoneParticles;
 
     public float Speed = 5f;
     public float Lifetime = 4f;
@@ -38,6 +39,7 @@ public class WallProjectile : MonoBehaviour
                 player.PlayerHitAnimation();
                 GameManager.Instance.ChangeLives(-Damage);
                 AudioSource.PlayClipAtPoint(_rockSFX, _soundClipPos);
+                SpawnStoneParticles();
                 ReturnToPool();
                 return;
             }
@@ -61,4 +63,11 @@ public class WallProjectile : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
+
+    private void SpawnStoneParticles()
+    {
+        if (_stoneParticles == null) return;
+        ParticleSystem ps = Instantiate(_stoneParticles, transform.position, Quaternion.identity);
+    }
+
 }

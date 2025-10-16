@@ -124,6 +124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rockSFX: {fileID: 8300000, guid: 5e5e3e24c95df1f469e749afc1ea1429, type: 3}
+  _stoneParticles: {fileID: 2720192600951193903, guid: d1de52f4ca1eed1419e2f0a37bbba27f, type: 3}
   Speed: 5
   Lifetime: 1.5
   Damage: 1
