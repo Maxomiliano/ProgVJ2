@@ -6,6 +6,8 @@ public class Enemy : CellObject
     private int _currentHealth;
     public int experienceValue = 5;
 
+    private Animator _animator;
+
     private void OnDestroy()
     {
         GameManager.Instance.TurnManager.OnTick -= TurnHappened;
@@ -26,6 +28,7 @@ public class Enemy : CellObject
         base.Init(coord);
         _currentHealth = Health;
         transform.position = GameManager.Instance.BoardManager.CellToWorld(coord);
+        _animator = GetComponent<Animator>();
 
         GameManager.Instance.TurnManager.OnTick += TurnHappened;
     }
@@ -76,6 +79,17 @@ public class Enemy : CellObject
 
         if ((xDist == 0 && absYDist == 1) || (yDist == 0 && absXDist == 1))
         {
+            if (_animator != null)
+            {
+                _animator.SetTrigger("EnemyAttack");
+            }
+
+            PlayerController player = GameManager.Instance.PlayerController;
+            if (player != null)
+            {
+                player.PlayerHit();
+            }
+
             GameManager.Instance.ChangeFood(-1);
         }
         else

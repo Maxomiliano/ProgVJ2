@@ -21,13 +21,6 @@ public class PlayerController : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
-    /*
-    public void Init()
-    {
-        
-    }
-    */
-
     public void Spawn(BoardManager boardManager, Vector2Int cell)
     {
         _board = boardManager;
@@ -56,6 +49,14 @@ public class PlayerController : MonoBehaviour
     private void Attack()
     {
         _animator.SetTrigger("Attack");
+    }
+
+    public void PlayerHit()
+    {
+        if (_animator != null)
+        {
+            _animator.SetTrigger("PlayerHit");
+        }
     }
 
     private void Update()
