@@ -44,4 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 203afbc40a9ed56468da309fe248cc42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _exitClip: {fileID: 8300000, guid: e1b28872620b87a4dafc036346fa0a79, type: 3}
   EndTile: {fileID: 11400000, guid: d95506e618475f4478aaaa15f2baf468, type: 2}
+  experienceOnExit: 20
