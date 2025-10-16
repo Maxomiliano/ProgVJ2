@@ -6,7 +6,6 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
-    private ObjectCollector objectCollector = new ObjectCollector();
     public BoardManager BoardManager;
     public PlayerController PlayerController;
     public TurnManager TurnManager;
@@ -40,9 +39,6 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        IsGameOver = false;
-
-        ObjectCollector objectCollector = FindFirstObjectByType<ObjectCollector>();
         TurnManager = new TurnManager();
         TurnManager.OnTick += OnTurnHappen;        
 
@@ -64,6 +60,8 @@ public class GameManager : MonoBehaviour
 
     public void StartNewGame()
     {
+        IsGameOver = false;
+
         _gameOverPanel.style.visibility = Visibility.Hidden;
 
         _currentLevel = 1;
@@ -80,7 +78,6 @@ public class GameManager : MonoBehaviour
         BoardManager.Clean();
         BoardManager.Init();
 
-        //PlayerController.Init();
         PlayerController.Spawn(BoardManager, new Vector2Int(1, 1));
     }
 
