@@ -123,6 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd2a4349645166747b4516cfe05f72da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _rockSFX: {fileID: 8300000, guid: 5e5e3e24c95df1f469e749afc1ea1429, type: 3}
   Speed: 5
   Lifetime: 1.5
   Damage: 1

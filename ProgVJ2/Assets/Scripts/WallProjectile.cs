@@ -2,10 +2,13 @@ using UnityEngine;
 
 public class WallProjectile : MonoBehaviour
 {
+    [SerializeField] private AudioClip _rockSFX;
+
     public float Speed = 5f;
     public float Lifetime = 4f;
     public int Damage = 1;
 
+    private Vector3 _soundClipPos;
     private Vector3 _direction;
     private float _timeAlive;
     private ObjectPooler _objectPooler;
@@ -13,6 +16,7 @@ public class WallProjectile : MonoBehaviour
     public void Init(Vector3 direction, float speed, int damage, float lifetime, ObjectPooler pooler)
     {
         _direction = direction.normalized;
+        _soundClipPos = new Vector3(4, 4, -10);
         Speed = speed;
         Damage = damage;
         Lifetime = lifetime;
@@ -32,7 +36,8 @@ public class WallProjectile : MonoBehaviour
             if (distance < 0.5f)
             {
                 player.PlayerHitAnimation();
-                GameManager.Instance.ChangeLives(-Damage); //Eventualmente esto va a ser un hitpoint que debo agregarle al personaje.
+                GameManager.Instance.ChangeLives(-Damage);
+                AudioSource.PlayClipAtPoint(_rockSFX, _soundClipPos);
                 ReturnToPool();
                 return;
             }

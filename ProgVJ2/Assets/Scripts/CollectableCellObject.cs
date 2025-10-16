@@ -2,7 +2,15 @@ using UnityEngine;
 
 public class CollectableCellObject : CellObject
 {
+    [SerializeField] private AudioClip _rescuedSFX;
+
+    private Vector3 _soundClipPos;
     public int experienceOnCollect = 2;
+
+    private void Start()
+    {
+        _soundClipPos = new Vector3( 4,4,-10);
+    }
 
     public override void PlayerEntered()
     {
@@ -11,6 +19,11 @@ public class CollectableCellObject : CellObject
         if (collector != null)
         {
             collector.CollectObject(this);
+        }
+
+        if (_rescuedSFX != null)
+        {
+            AudioSource.PlayClipAtPoint(_rescuedSFX, _soundClipPos);
         }
 
         PlayerProgression progression = player.GetComponent<PlayerProgression>();

@@ -2,8 +2,11 @@ using UnityEngine;
 
 public class Enemy : CellObject
 {
-    public int Health = 3;
+    [SerializeField] private AudioClip _vamipireHitSFX;
+
+    private AudioSource _audioSource;
     private int _currentHealth;
+    public int Health = 3;
     public int experienceValue = 5;
 
     private Animator _animator;
@@ -29,6 +32,7 @@ public class Enemy : CellObject
         _currentHealth = Health;
         transform.position = GameManager.Instance.BoardManager.CellToWorld(coord);
         _animator = GetComponent<Animator>();
+        _audioSource = GetComponent<AudioSource>();
 
         GameManager.Instance.TurnManager.OnTick += TurnHappened;
     }
@@ -82,6 +86,7 @@ public class Enemy : CellObject
             if (_animator != null)
             {
                 _animator.SetTrigger("EnemyAttack");
+                _audioSource.PlayOneShot(_vamipireHitSFX);
             }
 
             PlayerController player = GameManager.Instance.PlayerController;

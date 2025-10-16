@@ -1,10 +1,12 @@
-using System;
-using System.Reflection.Emit;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] private AudioClip _stepSFX;
+    [SerializeField] private AudioClip _playerHitRock;
+
+    private AudioSource _audioSource;
     private BoardManager _board;
     private Animator _animator;
     private Vector2Int _cellPosition;
@@ -19,6 +21,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         _animator = GetComponent<Animator>();
+        _audioSource = GetComponent<AudioSource>();
     }
 
     public void Spawn(BoardManager boardManager, Vector2Int cell)
@@ -76,21 +79,25 @@ public class PlayerController : MonoBehaviour
 
         if (Keyboard.current.upArrowKey.wasPressedThisFrame)
         {
+            PlayStepSFX();
             newCellTarget.y += 1;
             inputDetected = true;
         }
         else if (Keyboard.current.downArrowKey.wasPressedThisFrame)
         {
+            PlayStepSFX();
             newCellTarget.y -= 1;
             inputDetected = true;
         }
         else if (Keyboard.current.rightArrowKey.wasPressedThisFrame)
         {
+            PlayStepSFX();
             newCellTarget.x += 1;
             inputDetected = true;
         }
         else if (Keyboard.current.leftArrowKey.wasPressedThisFrame)
         {
+            PlayStepSFX();
             newCellTarget.x -= 1;
             inputDetected = true;
         }
@@ -115,6 +122,7 @@ public class PlayerController : MonoBehaviour
                     else
                     {
                         PlayerAttackAnimation();
+                        _audioSource.PlayOneShot(_playerHitRock);
                     }
                 }
             }
@@ -137,5 +145,11 @@ public class PlayerController : MonoBehaviour
             }
             return;
         }
+    }
+
+    private void PlayStepSFX()
+    {
+        if (_audioSource.isPlaying) return;
+        _audioSource.PlayOneShot(_stepSFX);
     }
 }
