@@ -32,10 +32,12 @@ public class EnemyBiteCellObject : CellObject
 
     public override void PlayerEntered()
     {
+        PlayerController player = GameManager.Instance.PlayerController;
         if (!_hasDamagedPlayer)
         {
             _hasDamagedPlayer = true;
             GameManager.Instance.ChangeFood(-Damage);
+            player.PlayerHitAnimation();
         }
 
         GameManager.Instance.BoardManager.GetCellData(_cell).ContainedObject = null;

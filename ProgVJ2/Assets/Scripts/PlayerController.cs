@@ -46,12 +46,12 @@ public class PlayerController : MonoBehaviour
         _animator.SetBool("Moving", hasMoved);
     }
 
-    private void Attack()
+    private void PlayerAttackAnimation()
     {
         _animator.SetTrigger("Attack");
     }
 
-    public void PlayerHit()
+    public void PlayerHitAnimation()
     {
         if (_animator != null)
         {
@@ -114,7 +114,7 @@ public class PlayerController : MonoBehaviour
                     }
                     else
                     {
-                        Attack();
+                        PlayerAttackAnimation();
                     }
                 }
             }

@@ -87,7 +87,7 @@ public class Enemy : CellObject
             PlayerController player = GameManager.Instance.PlayerController;
             if (player != null)
             {
-                player.PlayerHit();
+                player.PlayerHitAnimation();
             }
 
             GameManager.Instance.ChangeFood(-1);
